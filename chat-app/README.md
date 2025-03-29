@@ -8,7 +8,7 @@
 created a file which all backend apps tsconfig will extend
 ![extending backends.json](./readmeAssets/image-4.png)
 - Summary
-![alt text](./readmeAssets/image-5.png)
+![alt text](image-1.png)
 - add build and dev scripts for turbo to handle
 ![alt text](image.png)
 - The inputs are the things which when changed, turbo rebuilds without using cache
