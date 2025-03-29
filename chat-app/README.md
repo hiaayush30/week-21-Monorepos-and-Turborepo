@@ -9,7 +9,20 @@ created a file which all backend apps tsconfig will extend
 ![extending backends.json](./readmeAssets/image-4.png)
 - Summary
 ![alt text](./readmeAssets/image-5.png)
+- add build and dev scripts for turbo to handle
+![alt text](image.png)
+- The inputs are the things which when changed, turbo rebuilds without using cache
+- outputs contain the things which are needed to be cached (and ignored while while caching) by turbo
+### "dependsOn": ["^build"],
+- if there is a dependency graph build the packages on which the parent package depends first
 
+```json
+"dev": {
+      "cache": false,
+      "persistent": true
+    }
+    ```
+    - no caching to be done on dev time
 
 # Turborepo starter
 
